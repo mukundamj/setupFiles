@@ -4,3 +4,4 @@ set background=dark
 colorscheme solarized
 set hlsearch
 set incsearch
+set tags=tags;/ " search first in current directory then file directory for tag file
