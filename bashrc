@@ -14,6 +14,7 @@ function s256() #for linux
   exit
 }
 
+" Shows time and date for history command
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
 
