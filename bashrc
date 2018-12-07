@@ -14,4 +14,6 @@ function s256() #for linux
   exit
 }
 
+export HISTTIMEFORMAT="%d/%m/%y %T "
+
 
