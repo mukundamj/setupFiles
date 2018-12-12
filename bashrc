@@ -17,4 +17,7 @@ function s256() #for linux
 " Shows time and date for history command
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
+" Command to find linux version
+alias lnxver='lsb_release -a'
+
 
