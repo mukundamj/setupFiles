@@ -14,21 +14,22 @@ function s256() #for linux
   exit
 }
 
-" Shows time and date for history command
+# Shows time and date for history command
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
-" Command to find linux version
+# Command to find linux version
 alias lnxver='lsb_release -a'
 
-" Function to delete files recursively which has a wildcard pattern. Not tested
-function delrec
+# Function to delete files recursively which has a wildcard pattern
+# $1 = path, $2 = Wildcard, for example \*.o. note: * has to be escaped
+function delrec()
 {
-  find . -type f -name "$1" -delete
+  find $1 -type f -name "$2" -delete
 }
 
-" Function to replace words recursively. Not tested
-function reprec
+# Function to replace words recursively
+# $1 = path, $2 = string to be replaced, $3 = replacing string
+function reprec()
 {
-  find ./* -type f -exec sed -i 's/$1/$2/g' {} \;
+  find $1 -type f -exec sed -i "s/$2/$3/g" {} \;
 }
-
