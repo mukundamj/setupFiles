@@ -10,7 +10,10 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 ###############################################################################
 
 alias srbr='source ~/.bashrc'
-alias ll='la -la'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
 # Command to find linux version
 alias lnxver='lsb_release -a'
 
