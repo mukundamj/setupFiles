@@ -1,3 +1,6 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
 set belloff=all
 "syntax enable
 set background=dark
