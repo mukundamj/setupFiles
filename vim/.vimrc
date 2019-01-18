@@ -1,5 +1,8 @@
+#The following line activates pathogen - vim plugin manager 
 execute pathogen#infect()
+#Enables syntax recognition
 syntax on
+#Enables filetype recognition
 filetype plugin indent on
 set belloff=all
 "syntax enable
