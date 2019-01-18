@@ -26,4 +26,8 @@ go build golang.org/x/tools/cmd/guru
 mv guru $(go env GOROOT)/bin
 guru -help
 
+#Setup pathogen folders for vim plugin management
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
 echo "Machine setup completed"
