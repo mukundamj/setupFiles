@@ -30,4 +30,31 @@ guru -help
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
+#Install vim-go. The package is copied to bundle directory because
+#we are using pathogen to manage packages
+git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
+
+#Following vim-go packages installed as per the the link
+#https://github.com/fatih/vim-go/blob/master/doc/vim-go.txt
+
+cd ~/.vim/bundle/
+
+#Real-time completion (Vim):
+git clone https://github.com/Shougo/neocomplete.vim
+
+#Real-time completion (Neovim and Vim 8):
+git clone https://github.com/Shougo/deoplete.nvim
+git clone https://github.com/zchee/deoplete-go
+
+#Display source code navigation in a sidebar:
+git clone https://github.com/majutsushi/tagbar
+
+#Snippets:
+git clone https://github.com/joereynolds/vim-minisnip
+
+#Interactive |:GoDecls| and |:GoDeclsDir|:
+git clone https://github.com/Shougo/denite.nvim
+
+cd
+
 echo "Machine setup completed"
