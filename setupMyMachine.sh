@@ -20,4 +20,10 @@ cat .bash_profile >> ~/.bash_profile
 touch ~/.tmux.conf
 cat tmux/.tmux.conf >> ~/.tmux.conf
 
+#Install guru: an editor-integrated tool for navigating Go code
+go get golang.org/x/tools/cmd/guru
+go build golang.org/x/tools/cmd/guru
+mv guru $(go env GOROOT)/bin
+guru -help
+
 echo "Machine setup completed"
