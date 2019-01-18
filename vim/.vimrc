@@ -1,17 +1,22 @@
 #The following line activates pathogen - vim plugin manager 
 execute pathogen#infect()
+
+#The syntax and filetype should always be after execute pathoned line
 #Enables syntax recognition
 syntax on
+
 #Enables filetype recognition
 filetype plugin indent on
+
 set belloff=all
 "syntax enable
 set background=dark
-"If terminal(iterm2) is used set the color schme to solarized light/dark accordingly
-"colorscheme solarized
 set hlsearch
 set incsearch
 set tabstop=4
+
+"If terminal(iterm2) is used set the color schme to solarized light/dark accordingly
+"colorscheme solarized
 
 "ctags: search first in current directory then file directory for tag file
 set tags=tags;/
