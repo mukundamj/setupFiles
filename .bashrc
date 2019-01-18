@@ -190,3 +190,10 @@ alias do_tar='tar -cvzf'
 
 #Creates a tar.gz file, use it as "do_untar file.tar.gz"
 alias do_untar='tar -xvf'
+
+###############################################################################
+#                              golang related
+###############################################################################
+
+#List all golang related environment variables
+alias goenv='go env'
