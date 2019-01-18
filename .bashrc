@@ -180,3 +180,13 @@ function git_email_conf()
   fi
   git config --global user.email "$1"
 }
+
+###############################################################################
+#                              tar related
+###############################################################################
+
+#Creates a tar.gz file, use it as "do_tar newfile.tar.gz oldfile"
+alias do_tar='tar -cvzf'
+
+#Creates a tar.gz file, use it as "do_untar file.tar.gz"
+alias do_untar='tar -xvf'
