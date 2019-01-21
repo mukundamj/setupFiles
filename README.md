@@ -1,6 +1,4 @@
-###############################################################################
-#                              VM related settings                            #
-###############################################################################
+############################# VM related settings ##############################
 The following setting are required to be done manually if you want to ssh from
 host machine to a VM
 Reference stackoverflow answer:
