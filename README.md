@@ -1,8 +1,10 @@
-############################# VM related settings ##############################
-The following setting are required to be done manually if you want to ssh from
-host machine to a VM
-Reference stackoverflow answer:
-https://unix.stackexchange.com/questions/145997/trying-to-ssh-to-local-vm-ubuntu-with-putty
+# Machine setup instructions
+
+## VM related settings
+
+### The following setting are required to be done manually if you want to ssh
+### from host machine to a VM
+### The settings are inspired by [StackExchange answer](https://unix.stackexchange.com/questions/145997/trying-to-ssh-to-local-vm-ubuntu-with-putty)
 
 1. VirtualBox will create a private network (10.0.2.x) which will be connected 
    to your host network using NAT. (Unless configured otherwise.)
