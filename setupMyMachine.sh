@@ -57,4 +57,7 @@ git clone https://github.com/Shougo/denite.nvim
 
 cd
 
+#Install network monitoring tool
+sudo apt install bmon
+
 echo "Machine setup completed"
