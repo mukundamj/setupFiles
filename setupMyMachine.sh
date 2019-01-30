@@ -60,4 +60,8 @@ cd
 #Install network monitoring tool
 sudo apt install bmon
 
+#Instruct kernel to write core file in the working directory
+#The below pattern will create core file as core.<executable file name>.<pid of dumped process> 
+echo "core.%e.%p" > /proc/sys/kernel/core_pattern 
+
 echo "Machine setup completed"
