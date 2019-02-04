@@ -13,18 +13,20 @@ from host machine to a VM. The settings are inspired by [StackExchange answer](h
    ssh uses port 22 by default.
 
 ## Network manager related settings
-The following setting are required to be done manually if you want to
-manage network interface manually
-The settings are inspired by [blog](http://xmodulo.com/disable-network-manager-linux.html)
+The following setting are required to be done if you want to manage network interface
+manually. The settings are inspired by the [blog](http://xmodulo.com/disable-network-manager-linux.html).
 1. In the file /etc/NetworkManager/NetworkManager.conf set "managed=false" as shown below
-   '''
+
+   ```
    [ifupdown]
    managed=false
-   '''
+   ```
+
 2. In the file /etc/network/interfaces add the configuration information for the interface.
    For example in the below settings the network interface enp0s31f6 has static ip address
-   of 172.16.1.2.
-   ''' 
+   of 172.16.1.2 and other related settings.
+
+   ```
    # network interface not managed by Network Manager
    allow-hotplug enp0s31f6
    iface enp0s31f6 inet static
@@ -32,6 +34,7 @@ The settings are inspired by [blog](http://xmodulo.com/disable-network-manager-l
    netmask 255.255.0.0
    gateway 172.16.0.1
    dns-nameservers 8.8.8.8
-   '''
+   ```
+
 3. Then Network Manager automatically ignore any interfaces specified in /etc/network/interfaces,
    and stop managing them. 
