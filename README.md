@@ -12,29 +12,18 @@ from host machine to a VM. The settings are inspired by [StackExchange answer](h
 4. Make sure that the host port is not 22 in the port forwarding setting, because
    ssh uses port 22 by default.
 
-## Network manager related settings
-The following setting are required to be done if you want to manage network interface
-manually. The settings are inspired by the [blog](http://xmodulo.com/disable-network-manager-linux.html).
-1. In the file /etc/NetworkManager/NetworkManager.conf set "managed=false" as shown below
+## Installing YouCompleteMe plugin using pathogen
+The following setting are required to be done if you want to install YouCompleteMe.
+1. Make sure that pathogen is already installed and appropriate .vim/ folders are setup
+   i.e. ~/.vim/bundle and ~/.vim/autoload
    ```
-   [ifupdown]
-   managed=false
+   cd ~/.vim/bundle
+   git clone https://github.com/Valloric/YouCompleteMe.git
+   cd YouCompleteMe
+   git submodule update --init --recursive
    ```
-2. In the file /etc/network/interfaces add the configuration information for the interface.
-   For example in the below settings the network interface enp0s31f6 has static ip address
-   of 172.16.1.2 and other related settings.
+2. To install the plugin only for C family languages run
    ```
-   # network interface not managed by Network Manager
-   allow-hotplug enp0s31f6
-   iface enp0s31f6 inet static
-   address 172.16.1.2
-   netmask 255.255.0.0
-   gateway 172.16.0.1
-   dns-nameservers 8.8.8.8
+   ./install.sh --clang-completer
    ```
-3. Then Network Manager automatically ignore any interfaces specified in /etc/network/interfaces,
-   and stop managing them.
-4. Command to check status of network interfaces.
-   ```
-   nmcli dev status
-   ```
+3. To install the plugin for Golang add --go-completer to the above command
