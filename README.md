@@ -27,3 +27,18 @@ The following setting are required to be done if you want to install YouComplete
    ./install.sh --clang-completer
    ```
 3. To install the plugin for Golang add --go-completer to the above command
+
+## Mounting remote directory with sshfs.
+This could be helpful if the development environment with all the customized
+plugings is already setup and you want to edit the files on a remote server.
+1. Use the below command to mount filesystem on a remote server 
+   ```
+   sshfs user@domain:/remote/directory/ /local/directory/
+   ```
+2. If the remote server is a virtual machine to which ssh tunnel is setup usiing
+   port forwarding then use the below command
+   ```
+   sshfs user@127.0.1.1:/remote/directory/ -p 2222 /local/directory
+   ```
+   The local IP address 127.0.1.1 and the port 2222 depends on how the port
+   forwarding is setup.
