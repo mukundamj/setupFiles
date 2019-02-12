@@ -35,8 +35,8 @@ plugings is already setup and you want to edit the files on a remote server.
    ```
    sshfs user@domain:/remote/directory/ /local/directory/
    ```
-2. If the remote server is a virtual machine to which ssh tunnel is setup usiing
-   port forwarding then use the below command
+2. If the remote server is a virtual machine on the same host to which ssh
+   tunnel is setup usiing port forwarding then use the below command
    ```
    sshfs user@127.0.1.1:/remote/directory/ -p 2222 /local/directory
    ```
