@@ -42,3 +42,18 @@ plugings is already setup and you want to edit the files on a remote server.
    ```
    The local IP address 127.0.1.1 and the port 2222 depends on how the port
    forwarding is setup.
+
+## Steps to disable network manager for a particular interface on Ubuntu
+1. In the file /etc/NetworkManager/NetworkManager.conf put the below text
+   ```
+   [main]
+   plugins=keyfile
+   
+   [keyfile]
+   unmanaged-devices=mac:xx:xx:xx:xx:xx:xx
+   ```
+2. Then stop and start the Network Manager using the below commands
+   ```
+   systemctl stop NetworkManager
+   systemctl start NetworkManager
+   ```
