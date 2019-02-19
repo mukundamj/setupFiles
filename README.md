@@ -57,3 +57,7 @@ plugings is already setup and you want to edit the files on a remote server.
    systemctl stop NetworkManager
    systemctl start NetworkManager
    ```
+3. To check if an interface is managed or not use the below command
+   ```
+   nmcli d
+   ```
