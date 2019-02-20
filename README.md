@@ -61,3 +61,11 @@ plugings is already setup and you want to edit the files on a remote server.
    ```
    nmcli d
    ```
+## Commands to forcibly exit the ssh session when it hangs
+The following commands are from the [StackExchange answer](https://superuser.com/questions/467398/how-do-i-exit-a-ssh-connection)
+1. ~ followed Ctrl-Z suspends the session,
+2. ~& puts it directly into background,
+3. ~# gives a list of forwarded connections in this session.
+4. If you want to simply enter a tilde at the beginning of a line, you have to double it: ~~.
+
+
