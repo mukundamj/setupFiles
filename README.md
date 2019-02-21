@@ -52,12 +52,22 @@ plugings is already setup and you want to edit the files on a remote server.
    [keyfile]
    unmanaged-devices=mac:xx:xx:xx:xx:xx:xx
    ```
-2. Then stop and start the Network Manager using the below commands
+2. In the file /etc/network/interfaces add below lines
+   ```
+   # network interface not managed by Network Manager
+   allow-hotplug enx180f76fac9e8
+   iface xxxx inet static
+   address 172.16.x.x
+   netmask 255.255.0.0
+   gateway 0.0.0.0
+   dns-nameservers 8.8.8.8
+   ```
+3. Then stop and start the Network Manager using the below commands
    ```
    systemctl stop NetworkManager
    systemctl start NetworkManager
    ```
-3. To check if an interface is managed or not use the below command
+4. To check if an interface is managed or not use the below command
    ```
    nmcli d
    ```
