@@ -64,4 +64,7 @@ sudo apt install bmon
 #The below pattern will create core file as core.<executable file name>.<pid of dumped process> 
 echo "core.%e.%p" > /proc/sys/kernel/core_pattern 
 
+#Install code navigating tool
+sudo apt-get install cscope
+
 echo "Machine setup completed"
