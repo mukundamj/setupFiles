@@ -78,4 +78,14 @@ The following commands are from the [StackExchange answer](https://superuser.com
 3. ~# gives a list of forwarded connections in this session.
 4. If you want to simply enter a tilde at the beginning of a line, you have to double it: ~~.
 
+## NERDTree help [Stackoverflow answer](https://stackoverflow.com/questions/4446062/two-basic-questions-with-nerdtree-switching-windows-and-finding-files/4446090)
+The NERDTree plugin creates a Vim buffer, and displays it in a Vim window.
+So you can use any of your normal Vim commands.
+1. Thus, if your edit window is to the right of the NERDTree window, you would use:
+   ctrl + Wl to go to right window and ctrl + Wh to go to left window. or ctrl + w
+   twice to toggle between the two.
+2. To go to a special file, simply search for it while in the NERDTree window:
+   /xxx
+   Hit ENTER to end the search at the line, and then ENTER again to open the file
+   in the previous window and go to it.
 
