@@ -33,6 +33,10 @@ noremap <F5> :set list!<CR>
 inoremap <F5> <C-o>:set list!<CR>
 cnoremap <F5> <C-c>:set list!<CR>
 
+" Pressing CTRL + n will open the NERDTree and again pressing it will close
+" the NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
 "Help
 "To serach and delete a line
 ":g/<pattern>/d

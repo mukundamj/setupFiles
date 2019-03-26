@@ -67,4 +67,7 @@ echo "core.%e.%p" > /proc/sys/kernel/core_pattern
 #Install code navigating tool
 sudo apt-get install cscope
 
+#Install NERDTree
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+
 echo "Machine setup completed"
