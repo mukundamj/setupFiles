@@ -123,6 +123,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias default_shell='echo $SHELL'
 alias current_shell='echo $0'
+alias dumd1='sudo du -h --max-depth=1 | sort -hr'
 
 ###############################################################################
 #                    Linux version and architecture info
