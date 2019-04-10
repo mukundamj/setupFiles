@@ -70,4 +70,8 @@ sudo apt-get install cscope
 #Install NERDTree
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 
+#Install Ag (Ag is an order of magnitude faster than ack or grep)
+#https://github.com/ggreer/the_silver_searcher
+sudo apt-get install silversearcher-ag
+
 echo "Machine setup completed"
