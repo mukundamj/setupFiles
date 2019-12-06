@@ -200,12 +200,7 @@ alias do_untar='tar -xvf'
 alias goenv='go env'
 
 ###############################################################################
-#                            DELL Laptop specefic
+#                              xclip related
 ###############################################################################
-
-alias sshvm='ssh mukunda@127.0.1.1 -p 2222'
-alias sshbs='ssh rave2020@build-rave2020'
-alias sshaib='ssh aib_tester@192.168.48.25'
-alias setif='sudo ifconfig enx180f76fac9e8 172.16.1.2/16'
-alias sshr1='ssh root@172.16.59.6'
-alias sshr2='ssh root@172.16.3.1'
+alias ctrlc='xclip -selection c'
+alias ctrlv='xclip -selection c -o'
