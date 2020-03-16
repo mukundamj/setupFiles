@@ -74,4 +74,7 @@ git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 #https://github.com/ggreer/the_silver_searcher
 sudo apt-get install silversearcher-ag
 
+#To enable bash shell completion install the below package
+sudo apt-get install bash-completion
+
 echo "Machine setup completed"
