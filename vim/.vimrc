@@ -1,28 +1,22 @@
-#The following line activates pathogen - vim plugin manager 
-execute pathogen#infect()
+"The following line activates pathogen - vim plugin manager 
+"execute pathogen#infect()
 
-#The syntax and filetype should always be after execute pathoned line
-#Enables syntax recognition
+"The syntax and filetype should always be after execute pathoned line
+"Enables syntax recognition
 syntax on
 
-#Enables filetype recognition
-filetype plugin indent on
-
-set belloff=all
-"syntax enable
-set background=dark
+"set belloff=all
+syntax enable
+set background=light
 set hlsearch
 set incsearch
 set tabstop=4
 
-"If terminal(iterm2) is used set the color schme to solarized light/dark accordingly
-"colorscheme solarized
-
 "ctags: search first in current directory then file directory for tag file
-set tags=tags;/
+"set tags=tags;/
 
 " The following line will show file name in the window tab
-autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
+" autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%"))
 
 " Displays invisible characters as described below when set list is enabled
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
