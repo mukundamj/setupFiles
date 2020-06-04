@@ -204,3 +204,11 @@ alias goenv='go env'
 ###############################################################################
 alias ctrlc='xclip -selection c'
 alias ctrlv='xclip -selection c -o'
+
+###############################################################################
+# Set title of current terminal
+setTerminalTitle()
+{
+  wmctrl -r :ACTIVE: -N "$1"
+}
+alias termName=setTerminalTitle
