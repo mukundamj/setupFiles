@@ -2,6 +2,8 @@
 
 echo "Machine setup started"
 
+sudo apt-get update
+
 sudo apt-get install tmux
 
 #Since xclip doesn't come with linux mint by default it has to be manually
@@ -39,5 +41,8 @@ sudo apt-get install bash-completion
 
 #wmctrl package is used to set terminal names
 sudo apt-get install wmctrl
+
+#Setup rsa keys
+ssh-keygen -t rsa -b 4096
 
 echo "Machine setup completed"
