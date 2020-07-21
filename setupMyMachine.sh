@@ -42,7 +42,4 @@ sudo apt-get install bash-completion
 #wmctrl package is used to set terminal names
 sudo apt-get install wmctrl
 
-#Setup rsa keys
-ssh-keygen -t rsa -b 4096
-
 echo "Machine setup completed"
