@@ -65,15 +65,6 @@ else
 fi
 unset color_prompt force_color_prompt
 
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -212,3 +203,12 @@ setTerminalTitle()
   wmctrl -r :ACTIVE: -N "$1"
 }
 alias termName=setTerminalTitle
+
+
+###############################################################################
+#                            DELL Laptop specefic
+###############################################################################
+
+alias sshzm='ssh -X mjanardhana@192.168.50.7'
+alias sshzm2='ssh -X mjanardhana@10.22.16.34'
+alias sshzm3='ssh -X mjanardhana@192.168.178.24'
