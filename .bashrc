@@ -158,6 +158,13 @@ function s256() #for linux
   exit
 }
 
+# Set title of current terminal
+setTerminalTitle()
+{
+  wmctrl -r :ACTIVE: -N "$1"
+}
+alias termName=setTerminalTitle
+
 ###############################################################################
 #                              git related
 ###############################################################################
