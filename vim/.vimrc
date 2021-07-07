@@ -11,6 +11,7 @@ set background=light
 set hlsearch
 set incsearch
 set tabstop=4
+set spell spelllang=en_us
 
 "ctags: search first in current directory then file directory for tag file
 "set tags=tags;/
